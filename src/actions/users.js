@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 
-import type { Dispatch, GetState, ThunkAction, ReduxState } from '../types';
+import { Dispatch, GetState, ThunkAction, ReduxState } from '../types';
 
 const API_URL = 'https://jsonplaceholder.typicode.com/users';
 

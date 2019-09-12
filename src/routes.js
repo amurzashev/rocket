@@ -1,8 +1,8 @@
 /* @flow */
 
-import { usersAction, userAction } from './actions';
+import { usersAction } from './actions';
 import App from './app';
-import { asyncHome, asyncUserInfo, NotFound } from './pages';
+import { Home, Image, NotFound } from './components/pages';
 
 export default [
   {
@@ -11,17 +11,18 @@ export default [
       {
         path: '/',
         exact: true,
-        component: asyncHome, // Add your route here
+        component: Home, // Add your route here
         loadData: () => [
           usersAction.fetchUsersIfNeeded()
           // Add other pre-fetched actions here
         ]
       },
       {
-        path: '/UserInfo/:id',
-        component: asyncUserInfo,
-        loadData: ({ params }: Object) => [
-          userAction.fetchUserIfNeeded(params.id)
+        path: '/images/:id',
+        exact: true,
+        component: Image,
+        loadData: () => [
+          usersAction.fetchUsersIfNeeded()
         ]
       },
       {
