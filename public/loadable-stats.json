@@ -10,8 +10,7 @@
     "Image": "Image.js",
     "main": [
       "main.css",
-      "main.js",
-      "main.dffe7277cce5bd7a89e9.hot-update.js"
+      "main.js"
     ]
   },
   "assets": [
@@ -38,26 +37,8 @@
       "emitted": false
     },
     {
-      "name": "dffe7277cce5bd7a89e9.hot-update.json",
-      "size": 46,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": false
-    },
-    {
       "name": "main.css",
       "size": 6319,
-      "chunks": [
-        "main"
-      ],
-      "chunkNames": [
-        "main"
-      ],
-      "emitted": false
-    },
-    {
-      "name": "main.dffe7277cce5bd7a89e9.hot-update.js",
-      "size": 4623,
       "chunks": [
         "main"
       ],
@@ -75,7 +56,7 @@
       "chunkNames": [
         "main"
       ],
-      "emitted": false
+      "emitted": true
     }
   ],
   "filteredAssets": 0,
@@ -86,8 +67,7 @@
       ],
       "assets": [
         "main.css",
-        "main.js",
-        "main.dffe7277cce5bd7a89e9.hot-update.js"
+        "main.js"
       ],
       "children": {},
       "childAssets": {}
@@ -100,8 +80,7 @@
       ],
       "assets": [
         "main.css",
-        "main.js",
-        "main.dffe7277cce5bd7a89e9.hot-update.js"
+        "main.js"
       ],
       "children": {},
       "childAssets": {}
