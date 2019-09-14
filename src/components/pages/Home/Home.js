@@ -1,3 +1,8 @@
 import React from 'react';
+import Page from '../../templates/Page';
 
-export default () => <p>home page</p>;
+export default () => (
+  <Page>
+      hope page
+  </Page>
+);
