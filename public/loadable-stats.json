@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.39.3",
-  "hash": "cd523a04d1a739f2f03a",
+  "hash": "5ac74f02395bb8b65923",
   "publicPath": "/assets/",
   "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
   "assetsByChunkName": {
@@ -11,13 +11,12 @@
     "main": [
       "main.css",
       "main.js"
-    ],
-    "vendors~Home": "vendors~Home.js"
+    ]
   },
   "assets": [
     {
       "name": "Home.js",
-      "size": 8786,
+      "size": 3145,
       "chunks": [
         "Home"
       ],
@@ -50,23 +49,12 @@
     },
     {
       "name": "main.js",
-      "size": 4836988,
+      "size": 5088005,
       "chunks": [
         "main"
       ],
       "chunkNames": [
         "main"
-      ],
-      "emitted": false
-    },
-    {
-      "name": "vendors~Home.js",
-      "size": 207073,
-      "chunks": [
-        "vendors~Home"
-      ],
-      "chunkNames": [
-        "vendors~Home"
       ],
       "emitted": false
     }
@@ -99,11 +87,9 @@
     },
     "Home": {
       "chunks": [
-        "vendors~Home",
         "Home"
       ],
       "assets": [
-        "vendors~Home.js",
         "Home.js"
       ],
       "children": {},
@@ -127,48 +113,5 @@
       "debug": false
     }
   },
-  "children": [
-    {
-      "errors": [],
-      "warnings": [],
-      "publicPath": "/assets/",
-      "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
-      "assetsByChunkName": {},
-      "assets": [],
-      "filteredAssets": 0,
-      "entrypoints": {
-        "mini-css-extract-plugin": {
-          "chunks": [
-            "mini-css-extract-plugin"
-          ],
-          "assets": [
-            "*"
-          ],
-          "children": {},
-          "childAssets": {}
-        }
-      },
-      "namedChunkGroups": {
-        "mini-css-extract-plugin": {
-          "chunks": [
-            "mini-css-extract-plugin"
-          ],
-          "assets": [
-            "*"
-          ],
-          "children": {},
-          "childAssets": {}
-        }
-      },
-      "logging": {
-        "webpack.buildChunkGraph.visitModules": {
-          "entries": [],
-          "filteredEntries": 2,
-          "debug": false
-        }
-      },
-      "children": [],
-      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/postcss-loader/src/index.js??ref--5-2!node_modules/normalize.css/normalize.css"
-    }
-  ]
+  "children": []
 }

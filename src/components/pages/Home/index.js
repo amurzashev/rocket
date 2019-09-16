@@ -3,11 +3,7 @@ import React from 'react';
 import loadable from '@loadable/component';
 
 const Home = loadable(() => import('./Home'), {
-  fallback: <p>hello</p>
+  fallback: <p>hello</p>,
 });
 
-export default props => (
-  <div>
-    <Home {...props} />
-  </div>
-);
+export default props => <Home {...props} />;

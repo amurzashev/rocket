@@ -1,3 +1,4 @@
 import React from 'react';
+import Page from '../../templates/Page';
 
-export default () => <h1>NOT FOUND</h1>;
+export default () => <Page full padding>NOT FOUND</Page>;

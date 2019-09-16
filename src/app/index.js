@@ -5,19 +5,16 @@ import { renderRoutes } from 'react-router-config';
 import Helmet from 'react-helmet';
 import { hot } from 'react-hot-loader';
 import PropTypes from 'prop-types';
+import Nav from '../components/molecules/Nav';
 
 import config from '../config';
 import 'normalize.css/normalize.css'; // eslint-disable-line import/first
 
 const App = ({ route }) => (
   <>
-    <nav>navigation</nav>
-    <div id="root">
-      <Helmet {...config.app} />
-      {/* Navbar here??? */}
-      {/* Child routes won't render without this */}
-      {renderRoutes(route.routes)}
-    </div>
+    <Helmet {...config.app} />
+    <Nav />
+    {renderRoutes(route.routes)}
   </>
 );
 

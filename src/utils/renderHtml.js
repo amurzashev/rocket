@@ -1,12 +1,13 @@
+/* eslint-disable no-undef */
 import serialize from 'serialize-javascript';
 import { minify } from 'html-minifier';
 
 export default (
-  head: Object,
-  extractor: Function,
-  htmlContent: string,
-  initialState: Object
-): string => {
+  head,
+  extractor,
+  htmlContent,
+  initialState,
+) => {
   const html = `
     <!doctype html>
     <html ${head.htmlAttributes.toString()}>
@@ -31,7 +32,7 @@ export default (
       </head>
       <body>
         <!-- Insert the router, which passed from server-side -->
-        <div id="react-view">${htmlContent}</div>
+        <section id='app-container-content'>${htmlContent}</section>
 
         <!-- Store the initial state into window -->
         <script>
@@ -55,7 +56,7 @@ export default (
     trimCustomFragments: true,
     minifyCSS: true,
     minifyJS: true,
-    minifyURLs: true
+    minifyURLs: true,
   };
 
   // Minify html in production

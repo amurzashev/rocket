@@ -3,11 +3,7 @@ import React from 'react';
 import loadable from '@loadable/component';
 
 const Image = loadable(() => import('./Image'), {
-  fallback: <p>pic</p>
+  fallback: <p>pic</p>,
 });
 
-export default props => (
-  <div>
-    <Image {...props} />
-  </div>
-);
+export default props => <Image {...props} />;

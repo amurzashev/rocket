@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-underscore-dangle */
 /* @flow */
 
@@ -28,7 +29,7 @@ const render = Routes => {
       </Provider>
     </AppContainer>,
     // $FlowFixMe: isn't an issue
-    document.getElementById('react-view'),
+    document.getElementById('app-container-content'),
   );
 };
 
@@ -42,7 +43,6 @@ if (module.hot) {
   module.hot.accept('./routes', () => {
     try {
       const nextRoutes = require('./routes').default;
-
       render(nextRoutes);
     } catch (error) {
       console.error(`==> 😭  Routes hot reloading error ${error}`);

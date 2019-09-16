@@ -13,19 +13,19 @@ export default [
         exact: true,
         component: Home, // Add your route here
         loadData: () => [
-          usersAction.fetchUsersIfNeeded()
+          usersAction.fetchUsersIfNeeded(),
           // Add other pre-fetched actions here
-        ]
+        ],
       },
       {
         path: '/images/:id',
         exact: true,
         component: Image,
-        loadData: () => [usersAction.fetchUsersIfNeeded()]
+        loadData: () => [usersAction.fetchUsersIfNeeded()],
       },
       {
-        component: NotFound
-      }
-    ]
-  }
+        component: NotFound,
+      },
+    ],
+  },
 ];
