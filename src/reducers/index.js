@@ -8,9 +8,7 @@ import userInfo from './userInfo';
 
 const reducers = {
   home,
-  userInfo
+  userInfo,
 };
 
-export type Reducers = typeof reducers;
-export default (history: Object) =>
-  combineReducers({ router: connectRouter(history), ...reducers });
+export default history => combineReducers({ router: connectRouter(history), ...reducers });

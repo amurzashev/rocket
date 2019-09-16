@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 /* @flow */
 
 import React from 'react';
@@ -27,7 +28,7 @@ const render = Routes => {
       </Provider>
     </AppContainer>,
     // $FlowFixMe: isn't an issue
-    document.getElementById('react-view')
+    document.getElementById('react-view'),
   );
 };
 

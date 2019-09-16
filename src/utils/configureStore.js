@@ -1,3 +1,5 @@
+/* eslint-disable global-require */
+/* eslint-disable no-undef */
 /* @flow */
 
 import { createBrowserHistory, createMemoryHistory } from 'history';
@@ -5,39 +7,32 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { routerMiddleware } from 'connected-react-router';
 import thunk from 'redux-thunk';
 
-import type { Store } from '../types';
 import createRootReducer from '../reducers';
 
-type argv = {
-  initialState?: Object,
-  url?: string
-};
-
-export default ({ initialState, url }: argv): Store => {
+export default ({ initialState, url }) => {
   const isServer = typeof window === 'undefined';
   // Create a history depending on the environment
   const history = isServer
     ? createMemoryHistory({
-        initialEntries: [url || '/']
-      })
+      initialEntries: [url || '/'],
+    })
     : createBrowserHistory();
   const middlewares = [
     routerMiddleware(history),
-    thunk
+    thunk,
     // Add other middlewares here
   ];
   // Use Redux DevTools Extension in development
-  const composeEnhancers =
-    (__DEV__ && !isServer && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
-    compose;
+  const composeEnhancers = (__DEV__ && !isServer && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__)
+    || compose;
   const enhancers = composeEnhancers(
-    applyMiddleware(...middlewares)
+    applyMiddleware(...middlewares),
     // Add other enhancers here
   );
   const store = createStore(
     createRootReducer(history),
     initialState || {},
-    enhancers
+    enhancers,
   );
 
   if (module.hot) {

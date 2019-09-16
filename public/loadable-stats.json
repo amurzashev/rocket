@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.39.3",
-  "hash": "6b8e89a78c0eb6c45a17",
+  "hash": "3f6391e3706bc970826f",
   "publicPath": "/assets/",
   "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
   "assetsByChunkName": {
@@ -14,7 +14,7 @@
   "assets": [
     {
       "name": "Home.js",
-      "size": 8822,
+      "size": 8786,
       "chunks": ["Home"],
       "chunkNames": ["Home"],
       "emitted": false
@@ -35,7 +35,7 @@
     },
     {
       "name": "main.js",
-      "size": 4845895,
+      "size": 4845507,
       "chunks": ["main"],
       "chunkNames": ["main"],
       "emitted": true
