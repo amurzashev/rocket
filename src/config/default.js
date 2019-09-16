@@ -5,13 +5,13 @@ export default {
   port: process.env.PORT || '8080',
   app: {
     htmlAttributes: { lang: 'en' },
-    title: 'React Cool Starter',
-    titleTemplate: 'React Cool Starter - %s',
+    title: 'RocketFirm Unsplash API',
+    titleTemplate: 'RocketFirm Unsplash API - %s',
     meta: [
       {
         name: 'description',
-        content: 'The best react universal starter boilerplate in the world.'
-      }
-    ]
-  }
+        content: 'The best react universal starter boilerplate in the world.',
+      },
+    ],
+  },
 };
