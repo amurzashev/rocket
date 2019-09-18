@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.39.3",
-  "hash": "862f7cf6e91db27bf99e",
+  "hash": "84add29b89f4f1d87a3f",
   "publicPath": "/assets/",
   "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
   "assetsByChunkName": {
@@ -10,13 +10,14 @@
     "Image": "Image.js",
     "main": [
       "main.css",
-      "main.js"
+      "main.js",
+      "main.e184a2ffda38480ea3c8.hot-update.js"
     ]
   },
   "assets": [
     {
       "name": "Home.js",
-      "size": 3145,
+      "size": 6906,
       "chunks": [
         "Home"
       ],
@@ -37,6 +38,13 @@
       "emitted": false
     },
     {
+      "name": "e184a2ffda38480ea3c8.hot-update.json",
+      "size": 46,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": false
+    },
+    {
       "name": "main.css",
       "size": 6319,
       "chunks": [
@@ -48,8 +56,19 @@
       "emitted": false
     },
     {
+      "name": "main.e184a2ffda38480ea3c8.hot-update.js",
+      "size": 9475,
+      "chunks": [
+        "main"
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": false
+    },
+    {
       "name": "main.js",
-      "size": 5087853,
+      "size": 5111209,
       "chunks": [
         "main"
       ],
@@ -67,7 +86,8 @@
       ],
       "assets": [
         "main.css",
-        "main.js"
+        "main.js",
+        "main.e184a2ffda38480ea3c8.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -80,7 +100,8 @@
       ],
       "assets": [
         "main.css",
-        "main.js"
+        "main.js",
+        "main.e184a2ffda38480ea3c8.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

@@ -1,5 +1,4 @@
 /* @flow */
-
 import path from 'path';
 import logger from 'morgan';
 import express from 'express';
@@ -56,8 +55,8 @@ if (!__DEV__) {
       noInfo: true,
       writeToDisk: true,
       stats: 'minimal',
-      serverSideRender: true
-    })
+      serverSideRender: true,
+    }),
   );
 
   app.use(
