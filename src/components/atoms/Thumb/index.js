@@ -7,8 +7,6 @@ const ImageWrapper = styled.div`
   cursor: pointer;
   background-image: url("${props => props.image}");
   background-color: rgba(0,0,0,0.5);
-  height: calc(100% - 40px);
-  width: 100%;
   background-size: cover;
   position: relative;
   background-position: center;
@@ -44,23 +42,32 @@ const UserIcon = styled.div`
   background-size: contain;
 `;
 
-const Thumb = ({ item }) => (
-  <StyledLink to={`/images/${item.id}`}>
-    <Info>
-      <UserIcon icon={item.user.profile_image.medium} />
-      <Caption>
-        {item.user.name}
-      </Caption>
-    </Info>
-    <ImageWrapper image={item.urls.regular} />
-  </StyledLink>
-);
+const Thumb = ({ item }) => {
+  return (
+    <StyledLink to={`/images/${item.id}`}>
+      <Info>
+        <UserIcon icon={item.user.profile_image.medium} />
+        <Caption>
+          {item.user.name}
+        </Caption>
+      </Info>
+      <ImageWrapper image={item.urls.regular} />
+    </StyledLink>
+  );
+};
 
 Thumb.propTypes = {
   item: PropTypes.shape({
     id: PropTypes.string,
-    user: PropTypes.object,
-    urls: PropTypes.shape,
+    user: PropTypes.shape({
+      name: PropTypes.string,
+      profile_image: PropTypes.shape({
+        medium: PropTypes.string,
+      }),
+    }),
+    urls: PropTypes.shape({
+      regular: PropTypes.string,
+    }),
   }).isRequired,
 };
 export default Thumb;

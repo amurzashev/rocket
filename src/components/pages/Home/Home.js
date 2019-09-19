@@ -1,27 +1,32 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { feedAction } from '../../../actions';
+import { READY_STATUS_LOADING } from '../../../actions/types';
 import Page from '../../templates/Page';
+import { feedAction } from '../../../actions';
+import Gallery from '../../molecules/Gallery';
 
-const Home = ({ bindFeedActionLoadFeed, feed }) => {
+const Home = ({ feed, shouldLoadFeed }) => {
   useEffect(() => {
-    bindFeedActionLoadFeed();
+    shouldLoadFeed();
   }, []);
-  console.log(feed);
   return (
     <Page full padding>
-      <h1>home page</h1>
+      { feed.readyStatus === READY_STATUS_LOADING && <p>loading</p> }
+      <Gallery items={[...feed.items]} />
     </Page>
   );
 };
 
 Home.propTypes = {
-  bindFeedActionLoadFeed: PropTypes.func.isRequired,
-  feed: PropTypes.shape({}).isRequired,
+  shouldLoadFeed: PropTypes.func.isRequired,
+  feed: PropTypes.shape({
+    readyStatus: PropTypes.string.isRequired,
+    items: PropTypes.array.isRequired,
+  }).isRequired,
 };
 const mapStateToProps = state => ({ feed: state.feed });
 const mapDispatchToProps = {
-  bindFeedActionLoadFeed: feedAction.loadFeed,
+  shouldLoadFeed: feedAction.shouldLoadFeed,
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

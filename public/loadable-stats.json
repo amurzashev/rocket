@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.39.3",
-  "hash": "84add29b89f4f1d87a3f",
+  "hash": "8b101db815d219b0caff",
   "publicPath": "/assets/",
   "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
   "assetsByChunkName": {
@@ -11,20 +11,21 @@
     "main": [
       "main.css",
       "main.js",
-      "main.e184a2ffda38480ea3c8.hot-update.js"
-    ]
+      "main.ef95e9bc2102129a4fe7.hot-update.js"
+    ],
+    "vendors~Home": "vendors~Home.js"
   },
   "assets": [
     {
       "name": "Home.js",
-      "size": 6906,
+      "size": 34071,
       "chunks": [
         "Home"
       ],
       "chunkNames": [
         "Home"
       ],
-      "emitted": false
+      "emitted": true
     },
     {
       "name": "Image.js",
@@ -38,7 +39,7 @@
       "emitted": false
     },
     {
-      "name": "e184a2ffda38480ea3c8.hot-update.json",
+      "name": "ef95e9bc2102129a4fe7.hot-update.json",
       "size": 46,
       "chunks": [],
       "chunkNames": [],
@@ -56,8 +57,8 @@
       "emitted": false
     },
     {
-      "name": "main.e184a2ffda38480ea3c8.hot-update.js",
-      "size": 9475,
+      "name": "main.ef95e9bc2102129a4fe7.hot-update.js",
+      "size": 2176,
       "chunks": [
         "main"
       ],
@@ -68,12 +69,23 @@
     },
     {
       "name": "main.js",
-      "size": 5111209,
+      "size": 5123609,
       "chunks": [
         "main"
       ],
       "chunkNames": [
         "main"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "vendors~Home.js",
+      "size": 83325,
+      "chunks": [
+        "vendors~Home"
+      ],
+      "chunkNames": [
+        "vendors~Home"
       ],
       "emitted": false
     }
@@ -87,7 +99,7 @@
       "assets": [
         "main.css",
         "main.js",
-        "main.e184a2ffda38480ea3c8.hot-update.js"
+        "main.ef95e9bc2102129a4fe7.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -101,16 +113,18 @@
       "assets": [
         "main.css",
         "main.js",
-        "main.e184a2ffda38480ea3c8.hot-update.js"
+        "main.ef95e9bc2102129a4fe7.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
     },
     "Home": {
       "chunks": [
+        "vendors~Home",
         "Home"
       ],
       "assets": [
+        "vendors~Home.js",
         "Home.js"
       ],
       "children": {},

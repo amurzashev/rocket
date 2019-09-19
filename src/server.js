@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable import/no-extraneous-dependencies */
 /* @flow */
 import path from 'path';
 import logger from 'morgan';
@@ -61,8 +63,8 @@ if (!__DEV__) {
 
   app.use(
     require('webpack-hot-middleware')(compiler, {
-      log: false // Turn it off for friendly-errors-webpack-plugin
-    })
+      log: false, // Turn it off for friendly-errors-webpack-plugin
+    }),
   );
 }
 
@@ -79,7 +81,7 @@ app.get('*', (req, res) => {
         return Promise.all(
           route
             .loadData({ params: match.params, getState: store.getState })
-            .map(item => store.dispatch(item))
+            .map(item => store.dispatch(item)),
         );
       }
 
@@ -96,7 +98,7 @@ app.get('*', (req, res) => {
 
       const statsFile = path.resolve(
         process.cwd(),
-        'public/loadable-stats.json'
+        'public/loadable-stats.json',
       );
       const extractor = new ChunkExtractor({ statsFile });
 
@@ -151,11 +153,10 @@ if (config.port) {
     console.info(chalk.green(`==> 🌎  Listening at ${url}`));
 
     // Open browser
-    if (openBrowser(url))
-      console.info(chalk.green("==> 🖥️  Opened on your browser's tab!"));
+    if (openBrowser(url)) console.info(chalk.green("==> 🖥️  Opened on your browser's tab!"));
   });
 } else {
   console.error(
-    chalk.red('==> 😭  OMG!!! No PORT environment variable has been specified')
+    chalk.red('==> 😭  OMG!!! No PORT environment variable has been specified'),
   );
 }

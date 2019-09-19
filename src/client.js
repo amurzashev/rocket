@@ -9,6 +9,8 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import { renderRoutes } from 'react-router-config';
 import { loadableReady } from '@loadable/component';
+import { ThemeProvider } from 'emotion-theming';
+import theme from './utils/theme';
 
 import configureStore from './utils/configureStore';
 import routes from './routes';
@@ -21,13 +23,15 @@ const render = Routes => {
   const renderMethod = module.hot ? ReactDOM.render : ReactDOM.hydrate;
 
   renderMethod(
-    <AppContainer>
-      <Provider store={store}>
-        <ConnectedRouter history={history}>
-          {renderRoutes(Routes)}
-        </ConnectedRouter>
-      </Provider>
-    </AppContainer>,
+    <ThemeProvider theme={theme}>
+      <AppContainer>
+        <Provider store={store}>
+          <ConnectedRouter history={history}>
+            {renderRoutes(Routes)}
+          </ConnectedRouter>
+        </Provider>
+      </AppContainer>
+    </ThemeProvider>,
     // $FlowFixMe: isn't an issue
     document.getElementById('app-container-content'),
   );

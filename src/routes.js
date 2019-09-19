@@ -1,6 +1,6 @@
 /* @flow */
 
-import { usersAction } from './actions';
+import { feedAction } from './actions';
 import App from './app';
 import { Home, Image, NotFound } from './components/pages';
 
@@ -13,7 +13,7 @@ export default [
         exact: true,
         component: Home, // Add your route here
         loadData: () => [
-          usersAction.fetchUsersIfNeeded(),
+          feedAction.loadFeed(),
           // Add other pre-fetched actions here
         ],
       },
@@ -21,7 +21,7 @@ export default [
         path: '/images/:id',
         exact: true,
         component: Image,
-        loadData: () => [usersAction.fetchUsersIfNeeded()],
+        // loadData: () => [usersAction.fetchUsersIfNeeded()],
       },
       {
         component: NotFound,

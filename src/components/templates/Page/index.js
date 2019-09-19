@@ -20,7 +20,7 @@ export default styled.section`
     }
     return true;
   }}
-  @media only screen and (max-width: 1200px) {
+  ${props => props.theme.breakpoints.mobile} {
     padding: ${props => (props.padding ? '60px 20px 20px 20px' : 'initial')};    
   }
   padding: ${props => (props.padding ? '60px 200px 20px 200px' : 'initial')};
