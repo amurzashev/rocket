@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 
 const NavWrap = styled.nav`
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;

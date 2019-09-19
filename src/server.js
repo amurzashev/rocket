@@ -19,10 +19,13 @@ import Helmet from 'react-helmet';
 import chalk from 'chalk';
 import openBrowser from 'react-dev-utils/openBrowser';
 
+import { ThemeProvider } from 'emotion-theming';
 import configureStore from './utils/configureStore';
 import renderHtml from './utils/renderHtml';
 import routes from './routes';
 import config from './config';
+
+import theme from './utils/theme';
 
 const app = express();
 
@@ -104,14 +107,16 @@ app.get('*', (req, res) => {
 
       const staticContext = {};
       const AppComponent = (
-        <ChunkExtractorManager extractor={extractor}>
-          <Provider store={store}>
-            {/* Setup React-Router server-side rendering */}
-            <StaticRouter location={req.path} context={staticContext}>
-              {renderRoutes(routes)}
-            </StaticRouter>
-          </Provider>
-        </ChunkExtractorManager>
+        <ThemeProvider theme={theme}>
+          <ChunkExtractorManager extractor={extractor}>
+            <Provider store={store}>
+              {/* Setup React-Router server-side rendering */}
+              <StaticRouter location={req.path} context={staticContext}>
+                {renderRoutes(routes)}
+              </StaticRouter>
+            </Provider>
+          </ChunkExtractorManager>
+        </ThemeProvider>
       );
 
       const initialState = store.getState();

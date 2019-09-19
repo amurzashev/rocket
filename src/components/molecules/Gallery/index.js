@@ -5,24 +5,15 @@ import Thumb from '../../atoms/Thumb';
 
 const ParentGalleryWrap = styled.div`
   display: flex;
-  justify-content: center;
-`;
-
-const GalleryWrap = styled.div`
-  width: 100%;
-  background: #eee;
-  ${props => props.theme.breakpoints.mobile} {
-    width: 100%;
-  }
+  align-items: center;
+  flex-direction: column;
 `;
 
 const Gallery = ({ items }) => {
   if (!items.length) return null;
   return (
     <ParentGalleryWrap>
-      <GalleryWrap>
-        {items.map(pic => <Thumb item={pic} key={pic.id} />)}
-      </GalleryWrap>
+      {items.map(pic => <Thumb item={pic} key={pic.id} />)}
     </ParentGalleryWrap>
   );
 };
