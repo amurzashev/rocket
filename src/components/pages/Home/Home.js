@@ -13,7 +13,7 @@ const Home = ({ feed, shouldLoadFeed }) => {
   return (
     <Page full padding>
       { feed.readyStatus === READY_STATUS_LOADING && <p>loading</p> }
-      <Gallery items={[...feed.items]} />
+      <Gallery items={[...feed.items]} link />
     </Page>
   );
 };

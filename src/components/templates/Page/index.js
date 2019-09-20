@@ -21,7 +21,7 @@ export default styled.section`
     return true;
   }}
   ${props => props.theme.breakpoints.mobile} {
-    padding: ${props => (props.padding ? '60px 20px 20px 20px' : 'initial')};    
+    padding: ${props => (props.padding ? '80px 20px 20px 20px' : 'initial')};    
   }
-  padding: ${props => (props.padding ? '60px 200px 20px 200px' : 'initial')};
+  padding: ${props => (props.padding ? '80px 200px 20px 200px' : 'initial')};
 `;

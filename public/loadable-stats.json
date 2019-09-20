@@ -2,14 +2,11 @@
   "errors": [],
   "warnings": [],
   "version": "4.39.3",
-  "hash": "1a341afcd6dd33f53f00",
+  "hash": "d8de4e57f00ac11abb87",
   "publicPath": "/assets/",
   "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
   "assetsByChunkName": {
-    "Home": [
-      "Home.js",
-      "Home.63d4648df70414189ce0.hot-update.js"
-    ],
+    "Home": "Home.js",
     "Image": "Image.js",
     "main": [
       "main.css",
@@ -19,26 +16,8 @@
   },
   "assets": [
     {
-      "name": "63d4648df70414189ce0.hot-update.json",
-      "size": 46,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": false
-    },
-    {
-      "name": "Home.63d4648df70414189ce0.hot-update.js",
-      "size": 14649,
-      "chunks": [
-        "Home"
-      ],
-      "chunkNames": [
-        "Home"
-      ],
-      "emitted": false
-    },
-    {
       "name": "Home.js",
-      "size": 34891,
+      "size": 37493,
       "chunks": [
         "Home"
       ],
@@ -49,7 +28,7 @@
     },
     {
       "name": "Image.js",
-      "size": 2618,
+      "size": 3862,
       "chunks": [
         "Image"
       ],
@@ -67,11 +46,11 @@
       "chunkNames": [
         "main"
       ],
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "main.js",
-      "size": 5126203,
+      "size": 5134636,
       "chunks": [
         "main"
       ],
@@ -82,7 +61,7 @@
     },
     {
       "name": "vendors~Home.js",
-      "size": 83325,
+      "size": 86986,
       "chunks": [
         "vendors~Home"
       ],
@@ -125,8 +104,7 @@
       ],
       "assets": [
         "vendors~Home.js",
-        "Home.js",
-        "Home.63d4648df70414189ce0.hot-update.js"
+        "Home.js"
       ],
       "children": {},
       "childAssets": {}
@@ -149,5 +127,48 @@
       "debug": false
     }
   },
-  "children": []
+  "children": [
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/assets/",
+      "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/postcss-loader/src/index.js??ref--5-2!node_modules/normalize.css/normalize.css"
+    }
+  ]
 }

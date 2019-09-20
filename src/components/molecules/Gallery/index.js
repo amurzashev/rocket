@@ -9,11 +9,11 @@ const ParentGalleryWrap = styled.div`
   flex-direction: column;
 `;
 
-const Gallery = ({ items }) => {
+const Gallery = ({ items, link }) => {
   if (!items.length) return null;
   return (
     <ParentGalleryWrap>
-      {items.map(pic => <Thumb item={pic} key={pic.id} />)}
+      {items.map(pic => <Thumb item={pic} key={pic.id} link={link} />)}
     </ParentGalleryWrap>
   );
 };
@@ -22,5 +22,9 @@ Gallery.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({}),
   ).isRequired,
+  link: PropTypes.bool,
+};
+Gallery.defaultProps = {
+  link: false,
 };
 export default Gallery;

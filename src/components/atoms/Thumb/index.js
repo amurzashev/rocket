@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const Image = styled.img`
-  cursor: pointer;
   background-image: url("${props => props.image}");
   height: 100%;
   width: 100%;
@@ -14,21 +13,24 @@ const Image = styled.img`
   background-position: center;
 `;
 
-const StyledLink = styled(Link)`
+const StyledWrap = styled.div`
   box-sizing: border-box;
-  display: block;
-  text-decoration: none;
   color: black;
   width: 100%;
   max-width: 600px;
   &:not(:last-child) {
     margin-bottom: 20px;
   }
-  &:first-of-type {
-    margin-top: 20px;
-  }
   border: 1px solid ${props => props.theme.colors.darkGray};
   padding: 20px;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  display: block;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 `;
 
 const Caption = styled.p`
@@ -56,17 +58,38 @@ const UserIcon = styled.div`
   background-size: contain;
 `;
 
-const Thumb = ({ item }) => (
-  <StyledLink to={`/images/${item.id}`}>
-    <Info>
-      <UserIcon icon={item.user.profile_image.medium} />
-      <Caption>
-        {item.user.name}
-      </Caption>
-    </Info>
-    <Image src={item.urls.regular} alt={item.description || 'a photo from api'} />
-  </StyledLink>
-);
+const Thumb = ({ item, link }) => {
+  const extraInfo = (
+    <p> </p>
+  );
+  const thumb = (
+    <StyledWrap>
+      <Info>
+        <UserIcon icon={item.user.profile_image.medium} />
+        <Caption>
+          {item.user.name}
+        </Caption>
+      </Info>
+      <Image src={item.urls.regular} alt={item.alt_description || 'a photo from api'} />
+      { !link && { extraInfo } }
+    </StyledWrap>
+  );
+  if (link) {
+    return (
+      <StyledLink
+        to={{
+          pathname: `/images/${item.id}`,
+          state: {
+            item,
+          },
+        }}
+      >
+        {thumb}
+      </StyledLink>
+    );
+  }
+  return thumb;
+};
 
 Thumb.propTypes = {
   item: PropTypes.shape({
@@ -82,5 +105,6 @@ Thumb.propTypes = {
       regular: PropTypes.string,
     }),
   }).isRequired,
+  link: PropTypes.bool.isRequired,
 };
 export default Thumb;

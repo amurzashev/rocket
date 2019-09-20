@@ -24,6 +24,21 @@ export const loadFeed = () => (
   }
 );
 
+export const loadImage = id => (
+  async (dispatch, getState) => {
+
+  }
+)
+
+export const shouldLoadImage = id => (
+  (dispatch, getState) => {
+    const { feed } = getState();
+    const image = feed.find(img => img.id === id);
+    if (!image) return dispatch(loadImage(id));
+    return false;
+  }
+);
+
 export const shouldLoadFeed = () => (
   (dispatch, getState) => {
     const { feed } = getState();
