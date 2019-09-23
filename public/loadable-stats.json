@@ -9,70 +9,44 @@
     "Home": "Home.js",
     "Home~Image": "Home~Image.js",
     "Image": "Image.js",
-    "Search": [
-      "Search.js",
-      "Search.eab8b7fc08a5d2b0bf4a.hot-update.js"
-    ],
-    "main": [
-      "main.css",
-      "main.js"
-    ],
+    "Search": ["Search.js", "Search.eab8b7fc08a5d2b0bf4a.hot-update.js"],
+    "main": ["main.css", "main.js"],
     "vendors~Image": "vendors~Image.js"
   },
   "assets": [
     {
       "name": "Home.js",
       "size": 33816,
-      "chunks": [
-        "Home"
-      ],
-      "chunkNames": [
-        "Home"
-      ],
+      "chunks": ["Home"],
+      "chunkNames": ["Home"],
       "emitted": false
     },
     {
       "name": "Home~Image.js",
       "size": 32928,
-      "chunks": [
-        "Home~Image"
-      ],
-      "chunkNames": [
-        "Home~Image"
-      ],
+      "chunks": ["Home~Image"],
+      "chunkNames": ["Home~Image"],
       "emitted": false
     },
     {
       "name": "Image.js",
       "size": 11003,
-      "chunks": [
-        "Image"
-      ],
-      "chunkNames": [
-        "Image"
-      ],
+      "chunks": ["Image"],
+      "chunkNames": ["Image"],
       "emitted": false
     },
     {
       "name": "Search.eab8b7fc08a5d2b0bf4a.hot-update.js",
       "size": 8132,
-      "chunks": [
-        "Search"
-      ],
-      "chunkNames": [
-        "Search"
-      ],
+      "chunks": ["Search"],
+      "chunkNames": ["Search"],
       "emitted": false
     },
     {
       "name": "Search.js",
       "size": 12364,
-      "chunks": [
-        "Search"
-      ],
-      "chunkNames": [
-        "Search"
-      ],
+      "chunks": ["Search"],
+      "chunkNames": ["Search"],
       "emitted": false
     },
     {
@@ -85,97 +59,56 @@
     {
       "name": "main.css",
       "size": 6319,
-      "chunks": [
-        "main"
-      ],
-      "chunkNames": [
-        "main"
-      ],
+      "chunks": ["main"],
+      "chunkNames": ["main"],
       "emitted": false
     },
     {
       "name": "main.js",
       "size": 5225861,
-      "chunks": [
-        "main"
-      ],
-      "chunkNames": [
-        "main"
-      ],
+      "chunks": ["main"],
+      "chunkNames": ["main"],
       "emitted": false
     },
     {
       "name": "vendors~Image.js",
       "size": 1488749,
-      "chunks": [
-        "vendors~Image"
-      ],
-      "chunkNames": [
-        "vendors~Image"
-      ],
+      "chunks": ["vendors~Image"],
+      "chunkNames": ["vendors~Image"],
       "emitted": false
     }
   ],
   "filteredAssets": 0,
   "entrypoints": {
     "main": {
-      "chunks": [
-        "main"
-      ],
-      "assets": [
-        "main.css",
-        "main.js"
-      ],
+      "chunks": ["main"],
+      "assets": ["main.css", "main.js"],
       "children": {},
       "childAssets": {}
     }
   },
   "namedChunkGroups": {
     "main": {
-      "chunks": [
-        "main"
-      ],
-      "assets": [
-        "main.css",
-        "main.js"
-      ],
+      "chunks": ["main"],
+      "assets": ["main.css", "main.js"],
       "children": {},
       "childAssets": {}
     },
     "Home": {
-      "chunks": [
-        "Home~Image",
-        "Home"
-      ],
-      "assets": [
-        "Home~Image.js",
-        "Home.js"
-      ],
+      "chunks": ["Home~Image", "Home"],
+      "assets": ["Home~Image.js", "Home.js"],
       "children": {},
       "childAssets": {}
     },
     "Image": {
-      "chunks": [
-        "vendors~Image",
-        "Home~Image",
-        "Image"
-      ],
-      "assets": [
-        "vendors~Image.js",
-        "Home~Image.js",
-        "Image.js"
-      ],
+      "chunks": ["vendors~Image", "Home~Image", "Image"],
+      "assets": ["vendors~Image.js", "Home~Image.js", "Image.js"],
       "children": {},
       "childAssets": {}
     },
     "Search": {
-      "chunks": [
-        "Search"
-      ],
-      "assets": [
-        "Search.js",
-        "Search.eab8b7fc08a5d2b0bf4a.hot-update.js"
-      ],
+      "chunks": ["Search"],
+      "assets": ["Search.js", "Search.eab8b7fc08a5d2b0bf4a.hot-update.js"],
       "children": {},
       "childAssets": {}
     }

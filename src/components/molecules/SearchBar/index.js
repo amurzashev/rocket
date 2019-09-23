@@ -24,13 +24,11 @@ const SubmitButton = styled.button`
 
 `;
 
-const SearchBar = ({ onSubmit }) => {
-  return (
-    <Wrapper onSubmit={onSubmit}>
-      <SearchInput placeholder="Start typing" autoFocus />
-    </Wrapper>
-  );
-};
+const SearchBar = ({ onSubmit }) => (
+  <Wrapper onSubmit={onSubmit}>
+    <SearchInput placeholder="Start typing" autoFocus />
+  </Wrapper>
+);
 
 SearchBar.propTypes = {
   onSubmit: PropTypes.func.isRequired,
