@@ -21,7 +21,7 @@ export default [
         path: '/images/:id',
         exact: true,
         component: Image,
-        // loadData: () => [usersAction.fetchUsersIfNeeded()],
+        loadData: ({ params }) => [feedAction.shouldLoadImage(params.id)],
       },
       {
         component: NotFound,

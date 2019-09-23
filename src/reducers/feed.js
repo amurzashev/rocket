@@ -6,6 +6,7 @@ import {
   READY_STATUS_SUCCESS,
   FEED_LOADING_ERROR,
   READY_STATUS_ERROR,
+  FEED_IMAGE_LOADING_SUCCESS,
 } from '../actions/types';
 
 const initialState = {
@@ -27,6 +28,8 @@ export default (state = initialState, action) => {
       };
     case FEED_LOADING_ERROR:
       return { ...state, readyStatus: READY_STATUS_ERROR };
+    case FEED_IMAGE_LOADING_SUCCESS:
+      return { ...state, items: [...state.items, action.image] };
     default:
       return state;
   }

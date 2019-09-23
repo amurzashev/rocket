@@ -17,7 +17,7 @@ export default (
         <!--[if IE]>
           <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
         <![endif]-->
-
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="shortcut icon" href="/favicon.ico">
 

@@ -1,16 +1,30 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Page from '../../templates/Page';
-import { feedAction } from '../../../actions';
-// match.params.id
+import Gallery from '../../molecules/Gallery';
+// import { feedAction } from '../../../actions';
 
-export default (props) => {
-  useEffect(() => {
-    // should find pic or not
-    console.log(props)
-  }, []);
+const Image = ({ location }) => {
+  const { item } = location.state;
   return (
     <Page full padding>
-      pic
+      <Gallery single items={[item]} link={false} />
     </Page>
   );
 };
+
+Image.propTypes = {
+  location: PropTypes.shape({
+    state: PropTypes.shape({
+      item: PropTypes.shape({}),
+    }).isRequired,
+  }),
+};
+Image.defaultProps = {
+  location: PropTypes.shape({
+    state: PropTypes.shape({
+      item: PropTypes.shape({}),
+    }),
+  }),
+};
+export default Image;

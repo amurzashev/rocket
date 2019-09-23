@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import Caption from '../Caption';
 
 const Image = styled.img`
   background-image: url("${props => props.image}");
@@ -33,12 +34,6 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Caption = styled.p`
-  display: block;
-  font-size: 18px;
-  margin: 0;
-`;
-
 const Info = styled.div`
   height: 40px;
   width: 100%;
@@ -58,9 +53,17 @@ const UserIcon = styled.div`
   background-size: contain;
 `;
 
+const TextInfo = styled.div`
+  display: ƒlex;
+  flex-direction: row;
+`;
+
 const Thumb = ({ item, link }) => {
   const extraInfo = (
-    <p> </p>
+    <TextInfo>
+      <Caption bold>{item.user.username}</Caption>
+      <Caption>{item.description}</Caption>
+    </TextInfo>
   );
   const thumb = (
     <StyledWrap>
@@ -71,7 +74,7 @@ const Thumb = ({ item, link }) => {
         </Caption>
       </Info>
       <Image src={item.urls.regular} alt={item.alt_description || 'a photo from api'} />
-      { !link && { extraInfo } }
+      { !link && extraInfo }
     </StyledWrap>
   );
   if (link) {

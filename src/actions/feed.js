@@ -1,6 +1,13 @@
 /* eslint-disable import/prefer-default-export */
 import { apiRequest } from './axios';
-import { FEED_LOADING_BEGIN, FEED_LOADING_SUCCESS, FEED_LOADING_ERROR } from './types';
+import {
+  FEED_LOADING_BEGIN,
+  FEED_LOADING_SUCCESS,
+  FEED_LOADING_ERROR,
+  FEED_IMAGE_LOADING_BEGIN,
+  FEED_IMAGE_LOADING_ERROR,
+  FEED_IMAGE_LOADING_SUCCESS,
+} from './types';
 
 export const loadFeed = () => (
   async (dispatch, getState) => {
@@ -25,15 +32,31 @@ export const loadFeed = () => (
 );
 
 export const loadImage = id => (
-  async (dispatch, getState) => {
-
+  async (dispatch) => {
+    dispatch({
+      type: FEED_LOADING_BEGIN,
+    });
+    try {
+      console.log('loading image')
+      const { data } = await apiRequest.get(`images/${id}`);
+      const { image } = data;
+      dispatch({
+        type: FEED_IMAGE_LOADING_SUCCESS,
+        image,
+      });
+    } catch (error) {
+      console.log(error);
+      dispatch({
+        type: FEED_IMAGE_LOADING_ERROR,
+      });
+    }
   }
-)
+);
 
 export const shouldLoadImage = id => (
   (dispatch, getState) => {
     const { feed } = getState();
-    const image = feed.find(img => img.id === id);
+    const image = feed.items.find(img => img.id === id);
     if (!image) return dispatch(loadImage(id));
     return false;
   }
@@ -42,7 +65,7 @@ export const shouldLoadImage = id => (
 export const shouldLoadFeed = () => (
   (dispatch, getState) => {
     const { feed } = getState();
-    if (feed.items < 10) {
+    if (feed.items.length < 10) {
       dispatch(loadFeed());
     }
     return false;

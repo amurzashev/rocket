@@ -2,38 +2,82 @@
   "errors": [],
   "warnings": [],
   "version": "4.39.3",
-  "hash": "d8de4e57f00ac11abb87",
+  "hash": "b5c73ae2f5f20e5ae78d",
   "publicPath": "/assets/",
   "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
   "assetsByChunkName": {
     "Home": "Home.js",
+    "Home~Image": [
+      "Home~Image.js",
+      "Home~Image.2c5969513ef8fe9566f4.hot-update.js"
+    ],
     "Image": "Image.js",
     "main": [
       "main.css",
-      "main.js"
-    ],
-    "vendors~Home": "vendors~Home.js"
+      "main.js",
+      "main.2c5969513ef8fe9566f4.hot-update.js"
+    ]
   },
   "assets": [
     {
+      "name": "2c5969513ef8fe9566f4.hot-update.json",
+      "size": 64,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": false
+    },
+    {
       "name": "Home.js",
-      "size": 37493,
+      "size": 13052,
       "chunks": [
         "Home"
       ],
       "chunkNames": [
         "Home"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "Home~Image.2c5969513ef8fe9566f4.hot-update.js",
+      "size": 18103,
+      "chunks": [
+        "Home~Image"
+      ],
+      "chunkNames": [
+        "Home~Image"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "Home~Image.js",
+      "size": 46767,
+      "chunks": [
+        "Home~Image"
+      ],
+      "chunkNames": [
+        "Home~Image"
       ],
       "emitted": false
     },
     {
       "name": "Image.js",
-      "size": 3862,
+      "size": 6219,
       "chunks": [
         "Image"
       ],
       "chunkNames": [
         "Image"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "main.2c5969513ef8fe9566f4.hot-update.js",
+      "size": 1909,
+      "chunks": [
+        "main"
+      ],
+      "chunkNames": [
+        "main"
       ],
       "emitted": false
     },
@@ -50,23 +94,12 @@
     },
     {
       "name": "main.js",
-      "size": 5134636,
+      "size": 5220169,
       "chunks": [
         "main"
       ],
       "chunkNames": [
         "main"
-      ],
-      "emitted": false
-    },
-    {
-      "name": "vendors~Home.js",
-      "size": 86986,
-      "chunks": [
-        "vendors~Home"
-      ],
-      "chunkNames": [
-        "vendors~Home"
       ],
       "emitted": false
     }
@@ -79,7 +112,8 @@
       ],
       "assets": [
         "main.css",
-        "main.js"
+        "main.js",
+        "main.2c5969513ef8fe9566f4.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -92,18 +126,20 @@
       ],
       "assets": [
         "main.css",
-        "main.js"
+        "main.js",
+        "main.2c5969513ef8fe9566f4.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
     },
     "Home": {
       "chunks": [
-        "vendors~Home",
+        "Home~Image",
         "Home"
       ],
       "assets": [
-        "vendors~Home.js",
+        "Home~Image.js",
+        "Home~Image.2c5969513ef8fe9566f4.hot-update.js",
         "Home.js"
       ],
       "children": {},
@@ -111,9 +147,12 @@
     },
     "Image": {
       "chunks": [
+        "Home~Image",
         "Image"
       ],
       "assets": [
+        "Home~Image.js",
+        "Home~Image.2c5969513ef8fe9566f4.hot-update.js",
         "Image.js"
       ],
       "children": {},
@@ -127,48 +166,5 @@
       "debug": false
     }
   },
-  "children": [
-    {
-      "errors": [],
-      "warnings": [],
-      "publicPath": "/assets/",
-      "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
-      "assetsByChunkName": {},
-      "assets": [],
-      "filteredAssets": 0,
-      "entrypoints": {
-        "mini-css-extract-plugin": {
-          "chunks": [
-            "mini-css-extract-plugin"
-          ],
-          "assets": [
-            "*"
-          ],
-          "children": {},
-          "childAssets": {}
-        }
-      },
-      "namedChunkGroups": {
-        "mini-css-extract-plugin": {
-          "chunks": [
-            "mini-css-extract-plugin"
-          ],
-          "assets": [
-            "*"
-          ],
-          "children": {},
-          "childAssets": {}
-        }
-      },
-      "logging": {
-        "webpack.buildChunkGraph.visitModules": {
-          "entries": [],
-          "filteredEntries": 2,
-          "debug": false
-        }
-      },
-      "children": [],
-      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/postcss-loader/src/index.js??ref--5-2!node_modules/normalize.css/normalize.css"
-    }
-  ]
+  "children": []
 }
