@@ -2,7 +2,12 @@
 
 import { feedAction } from './actions';
 import App from './app';
-import { Home, Image, NotFound } from './components/pages';
+import {
+  Home,
+  Image,
+  NotFound,
+  Search,
+} from './components/pages';
 
 export default [
   {
@@ -22,6 +27,11 @@ export default [
         exact: true,
         component: Image,
         loadData: ({ params }) => [feedAction.shouldLoadImage(params.id)],
+      },
+      {
+        path: '/search',
+        exact: true,
+        component: Search,
       },
       {
         component: NotFound,
