@@ -61,8 +61,8 @@ const TextInfo = styled.div`
 const Thumb = ({ item, link }) => {
   const extraInfo = (
     <TextInfo>
-      <Caption bold>{item.user.username}</Caption>
-      <Caption>{item.description}</Caption>
+      <Caption bold inline margin="0 4px 0 0">{item.user.username}</Caption>
+      <Caption inline size="s">{item.description}</Caption>
     </TextInfo>
   );
   const thumb = (

@@ -2,22 +2,25 @@
   "errors": [],
   "warnings": [],
   "version": "4.39.3",
-  "hash": "b5c73ae2f5f20e5ae78d",
+  "hash": "85c8195b51eb15512972",
   "publicPath": "/assets/",
   "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
   "assetsByChunkName": {
     "Home": "Home.js",
     "Home~Image": [
       "Home~Image.js",
-      "Home~Image.2c5969513ef8fe9566f4.hot-update.js"
+      "Home~Image.90db3d608572af17dd82.hot-update.js"
     ],
     "Image": "Image.js",
-    "main": ["main.css", "main.js", "main.2c5969513ef8fe9566f4.hot-update.js"]
+    "main": [
+      "main.css",
+      "main.js"
+    ]
   },
   "assets": [
     {
-      "name": "2c5969513ef8fe9566f4.hot-update.json",
-      "size": 64,
+      "name": "90db3d608572af17dd82.hot-update.json",
+      "size": 52,
       "chunks": [],
       "chunkNames": [],
       "emitted": false
@@ -25,61 +28,79 @@
     {
       "name": "Home.js",
       "size": 13052,
-      "chunks": ["Home"],
-      "chunkNames": ["Home"],
-      "emitted": true
+      "chunks": [
+        "Home"
+      ],
+      "chunkNames": [
+        "Home"
+      ],
+      "emitted": false
     },
     {
-      "name": "Home~Image.2c5969513ef8fe9566f4.hot-update.js",
-      "size": 18103,
-      "chunks": ["Home~Image"],
-      "chunkNames": ["Home~Image"],
+      "name": "Home~Image.90db3d608572af17dd82.hot-update.js",
+      "size": 18180,
+      "chunks": [
+        "Home~Image"
+      ],
+      "chunkNames": [
+        "Home~Image"
+      ],
       "emitted": false
     },
     {
       "name": "Home~Image.js",
-      "size": 46767,
-      "chunks": ["Home~Image"],
-      "chunkNames": ["Home~Image"],
+      "size": 47272,
+      "chunks": [
+        "Home~Image"
+      ],
+      "chunkNames": [
+        "Home~Image"
+      ],
       "emitted": false
     },
     {
       "name": "Image.js",
       "size": 6219,
-      "chunks": ["Image"],
-      "chunkNames": ["Image"],
-      "emitted": true
-    },
-    {
-      "name": "main.2c5969513ef8fe9566f4.hot-update.js",
-      "size": 1909,
-      "chunks": ["main"],
-      "chunkNames": ["main"],
+      "chunks": [
+        "Image"
+      ],
+      "chunkNames": [
+        "Image"
+      ],
       "emitted": false
     },
     {
       "name": "main.css",
       "size": 6319,
-      "chunks": ["main"],
-      "chunkNames": ["main"],
+      "chunks": [
+        "main"
+      ],
+      "chunkNames": [
+        "main"
+      ],
       "emitted": false
     },
     {
       "name": "main.js",
       "size": 5220169,
-      "chunks": ["main"],
-      "chunkNames": ["main"],
+      "chunks": [
+        "main"
+      ],
+      "chunkNames": [
+        "main"
+      ],
       "emitted": false
     }
   ],
   "filteredAssets": 0,
   "entrypoints": {
     "main": {
-      "chunks": ["main"],
+      "chunks": [
+        "main"
+      ],
       "assets": [
         "main.css",
-        "main.js",
-        "main.2c5969513ef8fe9566f4.hot-update.js"
+        "main.js"
       ],
       "children": {},
       "childAssets": {}
@@ -87,30 +108,37 @@
   },
   "namedChunkGroups": {
     "main": {
-      "chunks": ["main"],
+      "chunks": [
+        "main"
+      ],
       "assets": [
         "main.css",
-        "main.js",
-        "main.2c5969513ef8fe9566f4.hot-update.js"
+        "main.js"
       ],
       "children": {},
       "childAssets": {}
     },
     "Home": {
-      "chunks": ["Home~Image", "Home"],
+      "chunks": [
+        "Home~Image",
+        "Home"
+      ],
       "assets": [
         "Home~Image.js",
-        "Home~Image.2c5969513ef8fe9566f4.hot-update.js",
+        "Home~Image.90db3d608572af17dd82.hot-update.js",
         "Home.js"
       ],
       "children": {},
       "childAssets": {}
     },
     "Image": {
-      "chunks": ["Home~Image", "Image"],
+      "chunks": [
+        "Home~Image",
+        "Image"
+      ],
       "assets": [
         "Home~Image.js",
-        "Home~Image.2c5969513ef8fe9566f4.hot-update.js",
+        "Home~Image.90db3d608572af17dd82.hot-update.js",
         "Image.js"
       ],
       "children": {},

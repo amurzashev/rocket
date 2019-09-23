@@ -12,8 +12,9 @@ const getFontSize = size => {
 };
 
 export default styled.p`
-  display: block;
+  display: ${props => (props.inline ? 'inline' : 'block')};
   font-size: ${props => getFontSize(props.size)}px;
   font-weight: ${props => (props.bold ? 700 : 400)};
   font-family: Roboto;
+  margin: ${props => props.margin};
 `;
