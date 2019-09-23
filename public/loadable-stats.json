@@ -2,55 +2,81 @@
   "errors": [],
   "warnings": [],
   "version": "4.39.3",
-  "hash": "b4770ed68fd9937484fb",
+  "hash": "809014d9b33263564af3",
   "publicPath": "/assets/",
   "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
   "assetsByChunkName": {
     "Home": "Home.js",
     "Home~Image": "Home~Image.js",
     "Image": "Image.js",
-    "Search": ["Search.js", "Search.eab8b7fc08a5d2b0bf4a.hot-update.js"],
-    "main": ["main.css", "main.js"],
+    "Search": [
+      "Search.js",
+      "Search.a3d220daf4275f3b4986.hot-update.js"
+    ],
+    "main": [
+      "main.css",
+      "main.js"
+    ],
     "vendors~Image": "vendors~Image.js"
   },
   "assets": [
     {
       "name": "Home.js",
       "size": 33816,
-      "chunks": ["Home"],
-      "chunkNames": ["Home"],
+      "chunks": [
+        "Home"
+      ],
+      "chunkNames": [
+        "Home"
+      ],
       "emitted": false
     },
     {
       "name": "Home~Image.js",
       "size": 32928,
-      "chunks": ["Home~Image"],
-      "chunkNames": ["Home~Image"],
+      "chunks": [
+        "Home~Image"
+      ],
+      "chunkNames": [
+        "Home~Image"
+      ],
       "emitted": false
     },
     {
       "name": "Image.js",
       "size": 11003,
-      "chunks": ["Image"],
-      "chunkNames": ["Image"],
+      "chunks": [
+        "Image"
+      ],
+      "chunkNames": [
+        "Image"
+      ],
       "emitted": false
     },
     {
-      "name": "Search.eab8b7fc08a5d2b0bf4a.hot-update.js",
-      "size": 8132,
-      "chunks": ["Search"],
-      "chunkNames": ["Search"],
+      "name": "Search.a3d220daf4275f3b4986.hot-update.js",
+      "size": 4065,
+      "chunks": [
+        "Search"
+      ],
+      "chunkNames": [
+        "Search"
+      ],
       "emitted": false
     },
     {
       "name": "Search.js",
-      "size": 12364,
-      "chunks": ["Search"],
-      "chunkNames": ["Search"],
+      "size": 12939,
+      "chunks": [
+        "Search"
+      ],
+      "chunkNames": [
+        "Search"
+      ],
       "emitted": false
     },
     {
-      "name": "eab8b7fc08a5d2b0bf4a.hot-update.json",
+      "name": "a3d220daf4275f3b4986.hot-update.json",
       "size": 48,
       "chunks": [],
       "chunkNames": [],
@@ -59,56 +85,97 @@
     {
       "name": "main.css",
       "size": 6319,
-      "chunks": ["main"],
-      "chunkNames": ["main"],
+      "chunks": [
+        "main"
+      ],
+      "chunkNames": [
+        "main"
+      ],
       "emitted": false
     },
     {
       "name": "main.js",
       "size": 5225861,
-      "chunks": ["main"],
-      "chunkNames": ["main"],
+      "chunks": [
+        "main"
+      ],
+      "chunkNames": [
+        "main"
+      ],
       "emitted": false
     },
     {
       "name": "vendors~Image.js",
       "size": 1488749,
-      "chunks": ["vendors~Image"],
-      "chunkNames": ["vendors~Image"],
+      "chunks": [
+        "vendors~Image"
+      ],
+      "chunkNames": [
+        "vendors~Image"
+      ],
       "emitted": false
     }
   ],
   "filteredAssets": 0,
   "entrypoints": {
     "main": {
-      "chunks": ["main"],
-      "assets": ["main.css", "main.js"],
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        "main.css",
+        "main.js"
+      ],
       "children": {},
       "childAssets": {}
     }
   },
   "namedChunkGroups": {
     "main": {
-      "chunks": ["main"],
-      "assets": ["main.css", "main.js"],
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        "main.css",
+        "main.js"
+      ],
       "children": {},
       "childAssets": {}
     },
     "Home": {
-      "chunks": ["Home~Image", "Home"],
-      "assets": ["Home~Image.js", "Home.js"],
+      "chunks": [
+        "Home~Image",
+        "Home"
+      ],
+      "assets": [
+        "Home~Image.js",
+        "Home.js"
+      ],
       "children": {},
       "childAssets": {}
     },
     "Image": {
-      "chunks": ["vendors~Image", "Home~Image", "Image"],
-      "assets": ["vendors~Image.js", "Home~Image.js", "Image.js"],
+      "chunks": [
+        "vendors~Image",
+        "Home~Image",
+        "Image"
+      ],
+      "assets": [
+        "vendors~Image.js",
+        "Home~Image.js",
+        "Image.js"
+      ],
       "children": {},
       "childAssets": {}
     },
     "Search": {
-      "chunks": ["Search"],
-      "assets": ["Search.js", "Search.eab8b7fc08a5d2b0bf4a.hot-update.js"],
+      "chunks": [
+        "Search"
+      ],
+      "assets": [
+        "Search.js",
+        "Search.a3d220daf4275f3b4986.hot-update.js"
+      ],
       "children": {},
       "childAssets": {}
     }

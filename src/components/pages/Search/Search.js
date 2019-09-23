@@ -5,7 +5,6 @@ import SearchBar from '../../molecules/SearchBar';
 export default () => {
   const onSubmit = e => {
     e.preventDefault();
-    console.log('hi');
   };
   const searchBarProps = {
     onSubmit,
