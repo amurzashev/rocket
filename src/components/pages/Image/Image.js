@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import Page from '../../templates/Page';
 import Gallery from '../../molecules/Gallery';
-// import { feedAction } from '../../../actions';
+import getItem from './utils';
 
-const Image = ({ location }) => {
-  const { item } = location.state;
+const Image = ({ feed, match }) => {
+  const item = getItem(feed.items, match.params.id);
   return (
     <Page full padding>
       <Gallery single items={[item]} link={false} />
@@ -14,17 +15,14 @@ const Image = ({ location }) => {
 };
 
 Image.propTypes = {
-  location: PropTypes.shape({
-    state: PropTypes.shape({
-      item: PropTypes.shape({}),
-    }).isRequired,
-  }),
-};
-Image.defaultProps = {
-  location: PropTypes.shape({
-    state: PropTypes.shape({
-      item: PropTypes.shape({}),
+  feed: PropTypes.shape({
+    items: PropTypes.array,
+  }).isRequired,
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      id: PropTypes.string,
     }),
-  }),
+  }).isRequired,
 };
-export default Image;
+const mapStateToProps = ({ feed }) => ({ feed });
+export default connect(mapStateToProps)(Image);

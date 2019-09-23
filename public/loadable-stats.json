@@ -2,54 +2,34 @@
   "errors": [],
   "warnings": [],
   "version": "4.39.3",
-  "hash": "85c8195b51eb15512972",
+  "hash": "0c13261b98eb76e18564",
   "publicPath": "/assets/",
   "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
   "assetsByChunkName": {
     "Home": "Home.js",
-    "Home~Image": [
-      "Home~Image.js",
-      "Home~Image.90db3d608572af17dd82.hot-update.js"
-    ],
+    "Home~Image": "Home~Image.js",
     "Image": "Image.js",
     "main": [
       "main.css",
       "main.js"
-    ]
+    ],
+    "vendors~Image": "vendors~Image.js"
   },
   "assets": [
     {
-      "name": "90db3d608572af17dd82.hot-update.json",
-      "size": 52,
-      "chunks": [],
-      "chunkNames": [],
-      "emitted": false
-    },
-    {
       "name": "Home.js",
-      "size": 13052,
+      "size": 33816,
       "chunks": [
         "Home"
       ],
       "chunkNames": [
         "Home"
-      ],
-      "emitted": false
-    },
-    {
-      "name": "Home~Image.90db3d608572af17dd82.hot-update.js",
-      "size": 18180,
-      "chunks": [
-        "Home~Image"
-      ],
-      "chunkNames": [
-        "Home~Image"
       ],
       "emitted": false
     },
     {
       "name": "Home~Image.js",
-      "size": 47272,
+      "size": 32928,
       "chunks": [
         "Home~Image"
       ],
@@ -60,7 +40,7 @@
     },
     {
       "name": "Image.js",
-      "size": 6219,
+      "size": 11003,
       "chunks": [
         "Image"
       ],
@@ -82,12 +62,23 @@
     },
     {
       "name": "main.js",
-      "size": 5220169,
+      "size": 5219930,
       "chunks": [
         "main"
       ],
       "chunkNames": [
         "main"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "vendors~Image.js",
+      "size": 1488749,
+      "chunks": [
+        "vendors~Image"
+      ],
+      "chunkNames": [
+        "vendors~Image"
       ],
       "emitted": false
     }
@@ -125,7 +116,6 @@
       ],
       "assets": [
         "Home~Image.js",
-        "Home~Image.90db3d608572af17dd82.hot-update.js",
         "Home.js"
       ],
       "children": {},
@@ -133,12 +123,13 @@
     },
     "Image": {
       "chunks": [
+        "vendors~Image",
         "Home~Image",
         "Image"
       ],
       "assets": [
+        "vendors~Image.js",
         "Home~Image.js",
-        "Home~Image.90db3d608572af17dd82.hot-update.js",
         "Image.js"
       ],
       "children": {},
@@ -152,5 +143,48 @@
       "debug": false
     }
   },
-  "children": []
+  "children": [
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/assets/",
+      "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/postcss-loader/src/index.js??ref--5-2!node_modules/normalize.css/normalize.css"
+    }
+  ]
 }

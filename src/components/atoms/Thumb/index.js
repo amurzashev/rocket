@@ -79,14 +79,7 @@ const Thumb = ({ item, link }) => {
   );
   if (link) {
     return (
-      <StyledLink
-        to={{
-          pathname: `/images/${item.id}`,
-          state: {
-            item,
-          },
-        }}
-      >
+      <StyledLink to={`/images/${item.id}`}>
         {thumb}
       </StyledLink>
     );

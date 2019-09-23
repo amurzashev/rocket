@@ -5,6 +5,7 @@ import { READY_STATUS_LOADING } from '../../../actions/types';
 import Page from '../../templates/Page';
 import { feedAction } from '../../../actions';
 import Gallery from '../../molecules/Gallery';
+import Status from '../../atoms/Status';
 
 const Home = ({ feed, shouldLoadFeed }) => {
   useEffect(() => {
@@ -12,8 +13,11 @@ const Home = ({ feed, shouldLoadFeed }) => {
   }, []);
   return (
     <Page full padding>
-      { feed.readyStatus === READY_STATUS_LOADING && <p>loading</p> }
-      <Gallery items={[...feed.items]} link />
+      {
+        feed.readyStatus === READY_STATUS_LOADING
+          ? <Status status="Loading" />
+          : <Gallery items={[...feed.items]} link />
+      }
     </Page>
   );
 };
