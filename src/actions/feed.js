@@ -37,7 +37,7 @@ export const loadImage = id => (
       type: FEED_LOADING_BEGIN,
     });
     try {
-      console.log('loading image')
+      console.log('loading image');
       const { data } = await apiRequest.get(`images/${id}`);
       const { image } = data;
       dispatch({

@@ -12,11 +12,7 @@
       "Home~Image.2c5969513ef8fe9566f4.hot-update.js"
     ],
     "Image": "Image.js",
-    "main": [
-      "main.css",
-      "main.js",
-      "main.2c5969513ef8fe9566f4.hot-update.js"
-    ]
+    "main": ["main.css", "main.js", "main.2c5969513ef8fe9566f4.hot-update.js"]
   },
   "assets": [
     {
@@ -29,87 +25,57 @@
     {
       "name": "Home.js",
       "size": 13052,
-      "chunks": [
-        "Home"
-      ],
-      "chunkNames": [
-        "Home"
-      ],
+      "chunks": ["Home"],
+      "chunkNames": ["Home"],
       "emitted": true
     },
     {
       "name": "Home~Image.2c5969513ef8fe9566f4.hot-update.js",
       "size": 18103,
-      "chunks": [
-        "Home~Image"
-      ],
-      "chunkNames": [
-        "Home~Image"
-      ],
+      "chunks": ["Home~Image"],
+      "chunkNames": ["Home~Image"],
       "emitted": false
     },
     {
       "name": "Home~Image.js",
       "size": 46767,
-      "chunks": [
-        "Home~Image"
-      ],
-      "chunkNames": [
-        "Home~Image"
-      ],
+      "chunks": ["Home~Image"],
+      "chunkNames": ["Home~Image"],
       "emitted": false
     },
     {
       "name": "Image.js",
       "size": 6219,
-      "chunks": [
-        "Image"
-      ],
-      "chunkNames": [
-        "Image"
-      ],
+      "chunks": ["Image"],
+      "chunkNames": ["Image"],
       "emitted": true
     },
     {
       "name": "main.2c5969513ef8fe9566f4.hot-update.js",
       "size": 1909,
-      "chunks": [
-        "main"
-      ],
-      "chunkNames": [
-        "main"
-      ],
+      "chunks": ["main"],
+      "chunkNames": ["main"],
       "emitted": false
     },
     {
       "name": "main.css",
       "size": 6319,
-      "chunks": [
-        "main"
-      ],
-      "chunkNames": [
-        "main"
-      ],
+      "chunks": ["main"],
+      "chunkNames": ["main"],
       "emitted": false
     },
     {
       "name": "main.js",
       "size": 5220169,
-      "chunks": [
-        "main"
-      ],
-      "chunkNames": [
-        "main"
-      ],
+      "chunks": ["main"],
+      "chunkNames": ["main"],
       "emitted": false
     }
   ],
   "filteredAssets": 0,
   "entrypoints": {
     "main": {
-      "chunks": [
-        "main"
-      ],
+      "chunks": ["main"],
       "assets": [
         "main.css",
         "main.js",
@@ -121,9 +87,7 @@
   },
   "namedChunkGroups": {
     "main": {
-      "chunks": [
-        "main"
-      ],
+      "chunks": ["main"],
       "assets": [
         "main.css",
         "main.js",
@@ -133,10 +97,7 @@
       "childAssets": {}
     },
     "Home": {
-      "chunks": [
-        "Home~Image",
-        "Home"
-      ],
+      "chunks": ["Home~Image", "Home"],
       "assets": [
         "Home~Image.js",
         "Home~Image.2c5969513ef8fe9566f4.hot-update.js",
@@ -146,10 +107,7 @@
       "childAssets": {}
     },
     "Image": {
-      "chunks": [
-        "Home~Image",
-        "Image"
-      ],
+      "chunks": ["Home~Image", "Image"],
       "assets": [
         "Home~Image.js",
         "Home~Image.2c5969513ef8fe9566f4.hot-update.js",
