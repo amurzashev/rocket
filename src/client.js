@@ -11,7 +11,6 @@ import { renderRoutes } from 'react-router-config';
 import { loadableReady } from '@loadable/component';
 import { ThemeProvider } from 'emotion-theming';
 import theme from './utils/theme';
-
 import configureStore from './utils/configureStore';
 import routes from './routes';
 
