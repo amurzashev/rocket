@@ -45,6 +45,7 @@
     "dev": "better-npm-run dev",
     "start": "better-npm-run start",
     "build": "yarn clean:build && better-npm-run build",
+    "heroku-postbuild": "yarn clean:build && better-npm-run build",
     "analyze": "yarn clean:build && better-npm-run analyze",
     "lint": "npm-run-all --parallel lint:*",
     "lint:js": "better-npm-run lint:js",
