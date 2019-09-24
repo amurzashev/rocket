@@ -4,7 +4,6 @@ import {
   FEED_LOADING_BEGIN,
   FEED_LOADING_SUCCESS,
   FEED_LOADING_ERROR,
-  FEED_IMAGE_LOADING_BEGIN,
   FEED_IMAGE_LOADING_ERROR,
   FEED_IMAGE_LOADING_SUCCESS,
 } from './types';
@@ -21,7 +20,8 @@ export const loadFeed = () => (
       dispatch({
         type: FEED_LOADING_SUCCESS,
         items,
-        pos: feed.pos + 1,
+        // pos: feed.pos + 1, infinite scroll set up
+        pos: feed.pos,
       });
     } catch (error) {
       dispatch({
