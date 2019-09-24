@@ -43,7 +43,7 @@
   ],
   "scripts": {
     "dev": "better-npm-run dev",
-    "start": "yarn clean:build && better-npm-run build && better-npm-run start",
+    "start": "better-npm-run start",
     "heroku-prebuild": "yarn install --production=false",
     "build": "yarn clean:build && better-npm-run build",
     "analyze": "yarn clean:build && better-npm-run analyze",
