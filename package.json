@@ -44,7 +44,7 @@
   "scripts": {
     "dev": "better-npm-run dev",
     "start": "better-npm-run start",
-    "heroku-prebuild": "yarn install --dev",
+    "heroku-prebuild": "yarn install --production=false",
     "build": "yarn clean:build && better-npm-run build",
     "analyze": "yarn clean:build && better-npm-run analyze",
     "lint": "npm-run-all --parallel lint:*",
@@ -70,7 +70,7 @@
       }
     },
     "start": {
-      "command": "node ./index.js",
+      "command": "node .",
       "env": {
         "NODE_PATH": "./src",
         "NODE_ENV": "production",
