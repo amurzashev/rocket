@@ -1,1 +1,1 @@
-web: PORT=8080 yarn start
+web: yarn start
