@@ -2,16 +2,16 @@
   "errors": [],
   "warnings": [],
   "version": "4.39.3",
-  "hash": "809014d9b33263564af3",
+  "hash": "9658fb46e1f4575b12d5",
   "publicPath": "/assets/",
   "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
   "assetsByChunkName": {
     "Home": "Home.js",
-    "Home~Image": "Home~Image.js",
+    "Home~Image~Search": "Home~Image~Search.js",
     "Image": "Image.js",
     "Search": [
       "Search.js",
-      "Search.a3d220daf4275f3b4986.hot-update.js"
+      "Search.cd0ea5ce7999dadd70c4.hot-update.js"
     ],
     "main": [
       "main.css",
@@ -22,7 +22,7 @@
   "assets": [
     {
       "name": "Home.js",
-      "size": 33816,
+      "size": 36371,
       "chunks": [
         "Home"
       ],
@@ -32,19 +32,19 @@
       "emitted": false
     },
     {
-      "name": "Home~Image.js",
-      "size": 32928,
+      "name": "Home~Image~Search.js",
+      "size": 32935,
       "chunks": [
-        "Home~Image"
+        "Home~Image~Search"
       ],
       "chunkNames": [
-        "Home~Image"
+        "Home~Image~Search"
       ],
       "emitted": false
     },
     {
       "name": "Image.js",
-      "size": 11003,
+      "size": 12098,
       "chunks": [
         "Image"
       ],
@@ -54,8 +54,8 @@
       "emitted": false
     },
     {
-      "name": "Search.a3d220daf4275f3b4986.hot-update.js",
-      "size": 4065,
+      "name": "Search.cd0ea5ce7999dadd70c4.hot-update.js",
+      "size": 14429,
       "chunks": [
         "Search"
       ],
@@ -66,7 +66,7 @@
     },
     {
       "name": "Search.js",
-      "size": 12939,
+      "size": 46816,
       "chunks": [
         "Search"
       ],
@@ -76,7 +76,7 @@
       "emitted": false
     },
     {
-      "name": "a3d220daf4275f3b4986.hot-update.json",
+      "name": "cd0ea5ce7999dadd70c4.hot-update.json",
       "size": 48,
       "chunks": [],
       "chunkNames": [],
@@ -95,7 +95,7 @@
     },
     {
       "name": "main.js",
-      "size": 5225861,
+      "size": 5225935,
       "chunks": [
         "main"
       ],
@@ -144,11 +144,11 @@
     },
     "Home": {
       "chunks": [
-        "Home~Image",
+        "Home~Image~Search",
         "Home"
       ],
       "assets": [
-        "Home~Image.js",
+        "Home~Image~Search.js",
         "Home.js"
       ],
       "children": {},
@@ -157,12 +157,12 @@
     "Image": {
       "chunks": [
         "vendors~Image",
-        "Home~Image",
+        "Home~Image~Search",
         "Image"
       ],
       "assets": [
         "vendors~Image.js",
-        "Home~Image.js",
+        "Home~Image~Search.js",
         "Image.js"
       ],
       "children": {},
@@ -170,11 +170,13 @@
     },
     "Search": {
       "chunks": [
+        "Home~Image~Search",
         "Search"
       ],
       "assets": [
+        "Home~Image~Search.js",
         "Search.js",
-        "Search.a3d220daf4275f3b4986.hot-update.js"
+        "Search.cd0ea5ce7999dadd70c4.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

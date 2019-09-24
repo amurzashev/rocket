@@ -32,14 +32,29 @@ const SubmitButton = styled.input`
   right: 30px;
 `;
 
-const SearchBar = ({ onSubmit }) => (
-  <Wrapper onSubmit={onSubmit}>
-    <SearchInput placeholder="Start typing" autoFocus />
-    <SubmitButton value="🔎" type="submit" />
-  </Wrapper>
-);
+const SearchBar = ({ onSubmit, onChange, value }) => {
+  const inputProps = {
+    placeholder: 'Start typing...',
+    autoFocus: true,
+    onChange,
+    value,
+  };
+  const buttonProps = {
+    value: '🔎',
+    type: 'submit',
+    disabled: !value,
+  };
+  return (
+    <Wrapper onSubmit={onSubmit}>
+      <SearchInput {...inputProps} />
+      <SubmitButton {...buttonProps} />
+    </Wrapper>
+  );
+};
 
 SearchBar.propTypes = {
   onSubmit: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
+  value: PropTypes.string.isRequired,
 };
 export default SearchBar;

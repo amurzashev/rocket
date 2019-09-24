@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import Helmet from 'react-helmet';
 import { READY_STATUS_LOADING } from '../../../actions/types';
 import Page from '../../templates/Page';
 import { feedAction } from '../../../actions';
@@ -13,9 +14,10 @@ const Home = ({ feed, shouldLoadFeed }) => {
   }, []);
   return (
     <Page full padding>
+      <Helmet title="Home" />
       {
         feed.readyStatus === READY_STATUS_LOADING
-          ? <Status status="Loading" />
+          ? <Status status={READY_STATUS_LOADING} />
           : <Gallery items={[...feed.items]} link />
       }
     </Page>
