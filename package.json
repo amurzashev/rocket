@@ -43,7 +43,7 @@
   ],
   "scripts": {
     "dev": "better-npm-run dev",
-    "start": "better-npm-run start",
+    "start": "yarn clean:build && better-npm-run build && better-npm-run start",
     "build": "yarn clean:build && better-npm-run build",
     "heroku-postbuild": "yarn clean:build && better-npm-run build",
     "analyze": "yarn clean:build && better-npm-run analyze",
@@ -70,7 +70,7 @@
       }
     },
     "start": {
-      "command": "node .",
+      "command": "node ./index.js",
       "env": {
         "NODE_PATH": "./src",
         "NODE_ENV": "production",
