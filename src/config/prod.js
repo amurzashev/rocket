@@ -2,5 +2,5 @@
 
 export default {
   // Over write default settings here...
-  PORT: process.env.PORT,
+  port: process.env.PORT || 4040,
 };
