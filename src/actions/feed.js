@@ -37,7 +37,6 @@ export const loadImage = id => (
       type: FEED_LOADING_BEGIN,
     });
     try {
-      console.log('loading image');
       const { data } = await apiRequest.get(`images/${id}`);
       const { image } = data;
       dispatch({
@@ -45,7 +44,6 @@ export const loadImage = id => (
         image,
       });
     } catch (error) {
-      console.log(error);
       dispatch({
         type: FEED_IMAGE_LOADING_ERROR,
       });
@@ -57,7 +55,6 @@ export const shouldLoadImage = id => (
   (dispatch, getState) => {
     const { feed } = getState();
     const image = feed.items.find(img => img.id === id);
-    console.log(image);
     if (!image) return dispatch(loadImage(id));
     return false;
   }
