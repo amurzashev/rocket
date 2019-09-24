@@ -1,0 +1,316 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.39.3",
+  "hash": "65787f8c80966fdfa159",
+  "publicPath": "/assets/",
+  "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
+  "assetsByChunkName": {
+    "Home": [
+      "0.f2ec7a03.js",
+      "0.f2ec7a03.js.map"
+    ],
+    "Image": [
+      "1.c4be1dc0.js",
+      "1.c4be1dc0.js.map"
+    ],
+    "Search": [
+      "2.80dcd301.js",
+      "2.80dcd301.js.map"
+    ],
+    "main": [
+      "main.a6c4bb74.js",
+      "main.a6c4bb74.js.map"
+    ],
+    "vendors~Image": [
+      "4.de398411.js",
+      "4.de398411.js.map"
+    ],
+    "vendors~main": [
+      "5.26dec664.css",
+      "5.ce4e3c3d.js",
+      "5.ce4e3c3d.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "0.f2ec7a03.js",
+      "size": 12556,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "Home"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "0.f2ec7a03.js.map",
+      "size": 46344,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "Home"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "1.c4be1dc0.js",
+      "size": 4030,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "Image"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "1.c4be1dc0.js.map",
+      "size": 7891,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "Image"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "2.80dcd301.js",
+      "size": 13361,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "Search"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "2.80dcd301.js.map",
+      "size": 45089,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "Search"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "4.de398411.js",
+      "size": 76360,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [
+        "vendors~Image"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "4.de398411.js.LICENSE",
+      "size": 336,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": false
+    },
+    {
+      "name": "4.de398411.js.map",
+      "size": 713063,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [
+        "vendors~Image"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "5.26dec664.css",
+      "size": 1934,
+      "chunks": [
+        5
+      ],
+      "chunkNames": [
+        "vendors~main"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "5.ce4e3c3d.js",
+      "size": 271591,
+      "chunks": [
+        5
+      ],
+      "chunkNames": [
+        "vendors~main"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "5.ce4e3c3d.js.LICENSE",
+      "size": 1155,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": false
+    },
+    {
+      "name": "5.ce4e3c3d.js.map",
+      "size": 993734,
+      "chunks": [
+        5
+      ],
+      "chunkNames": [
+        "vendors~main"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "main.a6c4bb74.js",
+      "size": 12435,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": false
+    },
+    {
+      "name": "main.a6c4bb74.js.map",
+      "size": 30047,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        5,
+        3
+      ],
+      "assets": [
+        "5.26dec664.css",
+        "5.ce4e3c3d.js",
+        "5.ce4e3c3d.js.map",
+        "main.a6c4bb74.js",
+        "main.a6c4bb74.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        5,
+        3
+      ],
+      "assets": [
+        "5.26dec664.css",
+        "5.ce4e3c3d.js",
+        "5.ce4e3c3d.js.map",
+        "main.a6c4bb74.js",
+        "main.a6c4bb74.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "Home": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "0.f2ec7a03.js",
+        "0.f2ec7a03.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "Image": {
+      "chunks": [
+        4,
+        1
+      ],
+      "assets": [
+        "4.de398411.js",
+        "4.de398411.js.map",
+        "1.c4be1dc0.js",
+        "1.c4be1dc0.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "Search": {
+      "chunks": [
+        2
+      ],
+      "assets": [
+        "2.80dcd301.js",
+        "2.80dcd301.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": [
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/assets/",
+      "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/postcss-loader/src/index.js??ref--5-2!node_modules/normalize.css/normalize.css"
+    }
+  ]
+}
