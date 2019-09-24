@@ -2,27 +2,25 @@
   "errors": [],
   "warnings": [],
   "version": "4.39.3",
-  "hash": "9658fb46e1f4575b12d5",
+  "hash": "20a23a83a8b393c6db74",
   "publicPath": "/assets/",
   "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
   "assetsByChunkName": {
     "Home": "Home.js",
     "Home~Image~Search": "Home~Image~Search.js",
     "Image": "Image.js",
-    "Search": [
-      "Search.js",
-      "Search.cd0ea5ce7999dadd70c4.hot-update.js"
-    ],
+    "Search": "Search.js",
     "main": [
       "main.css",
       "main.js"
     ],
+    "vendors~Home~Search": "vendors~Home~Search.js",
     "vendors~Image": "vendors~Image.js"
   },
   "assets": [
     {
       "name": "Home.js",
-      "size": 36371,
+      "size": 30757,
       "chunks": [
         "Home"
       ],
@@ -44,42 +42,24 @@
     },
     {
       "name": "Image.js",
-      "size": 12098,
+      "size": 14286,
       "chunks": [
         "Image"
       ],
       "chunkNames": [
         "Image"
-      ],
-      "emitted": false
-    },
-    {
-      "name": "Search.cd0ea5ce7999dadd70c4.hot-update.js",
-      "size": 14429,
-      "chunks": [
-        "Search"
-      ],
-      "chunkNames": [
-        "Search"
       ],
       "emitted": false
     },
     {
       "name": "Search.js",
-      "size": 46816,
+      "size": 32643,
       "chunks": [
         "Search"
       ],
       "chunkNames": [
         "Search"
       ],
-      "emitted": false
-    },
-    {
-      "name": "cd0ea5ce7999dadd70c4.hot-update.json",
-      "size": 48,
-      "chunks": [],
-      "chunkNames": [],
       "emitted": false
     },
     {
@@ -95,7 +75,7 @@
     },
     {
       "name": "main.js",
-      "size": 5225935,
+      "size": 5146270,
       "chunks": [
         "main"
       ],
@@ -105,8 +85,19 @@
       "emitted": false
     },
     {
+      "name": "vendors~Home~Search.js",
+      "size": 80888,
+      "chunks": [
+        "vendors~Home~Search"
+      ],
+      "chunkNames": [
+        "vendors~Home~Search"
+      ],
+      "emitted": false
+    },
+    {
       "name": "vendors~Image.js",
-      "size": 1488749,
+      "size": 1501976,
       "chunks": [
         "vendors~Image"
       ],
@@ -144,10 +135,12 @@
     },
     "Home": {
       "chunks": [
+        "vendors~Home~Search",
         "Home~Image~Search",
         "Home"
       ],
       "assets": [
+        "vendors~Home~Search.js",
         "Home~Image~Search.js",
         "Home.js"
       ],
@@ -170,13 +163,14 @@
     },
     "Search": {
       "chunks": [
+        "vendors~Home~Search",
         "Home~Image~Search",
         "Search"
       ],
       "assets": [
+        "vendors~Home~Search.js",
         "Home~Image~Search.js",
-        "Search.js",
-        "Search.cd0ea5ce7999dadd70c4.hot-update.js"
+        "Search.js"
       ],
       "children": {},
       "childAssets": {}
@@ -189,5 +183,48 @@
       "debug": false
     }
   },
-  "children": []
+  "children": [
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "/assets/",
+      "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [
+            "*"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "logging": {
+        "webpack.buildChunkGraph.visitModules": {
+          "entries": [],
+          "filteredEntries": 2,
+          "debug": false
+        }
+      },
+      "children": [],
+      "name": "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--5-1!node_modules/postcss-loader/src/index.js??ref--5-2!node_modules/normalize.css/normalize.css"
+    }
+  ]
 }

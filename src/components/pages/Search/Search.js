@@ -20,7 +20,6 @@ export default () => {
     setStatus(READY_STATUS_LOADING);
     apiRequest.get(`search/${value}`)
       .then(response => {
-        console.log(response.data);
         setStatus(READY_STATUS_SUCCESS);
         setItems(response.data.items);
       })

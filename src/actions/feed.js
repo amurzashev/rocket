@@ -57,6 +57,7 @@ export const shouldLoadImage = id => (
   (dispatch, getState) => {
     const { feed } = getState();
     const image = feed.items.find(img => img.id === id);
+    console.log(image);
     if (!image) return dispatch(loadImage(id));
     return false;
   }

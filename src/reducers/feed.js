@@ -29,7 +29,7 @@ export default (state = initialState, action) => {
     case FEED_LOADING_ERROR:
       return { ...state, readyStatus: READY_STATUS_ERROR };
     case FEED_IMAGE_LOADING_SUCCESS:
-      return { ...state, items: [...state.items, action.image] };
+      return { ...state, items: [action.image], readyStatus: READY_STATUS_SUCCESS };
     default:
       return state;
   }

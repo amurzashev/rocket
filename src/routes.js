@@ -26,7 +26,9 @@ export default [
         path: '/images/:id',
         exact: true,
         component: Image,
-        loadData: ({ params }) => [feedAction.shouldLoadImage(params.id)],
+        loadData: ({ params }) => [
+          feedAction.shouldLoadImage(params.id),
+        ],
       },
       {
         path: '/search',
