@@ -11,7 +11,6 @@ import Status from '../../atoms/Status';
 const Home = ({ feed, shouldLoadFeed }) => {
   useEffect(() => {
     shouldLoadFeed();
-    console.log(process.env.NODE_ENV)
   }, []);
   return (
     <Page full padding>

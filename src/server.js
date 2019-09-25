@@ -118,7 +118,7 @@ app.get('*', (req, res) => {
           </ChunkExtractorManager>
         </ThemeProvider>
       );
-
+      console.log(process.env.NODE_ENV)
       const initialState = store.getState();
       const htmlContent = renderToString(AppComponent);
       // head must be placed after "renderToString"
