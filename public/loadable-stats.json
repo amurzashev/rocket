@@ -2,65 +2,112 @@
   "errors": [],
   "warnings": [],
   "version": "4.39.3",
-  "hash": "a4867de82e092c754e98",
+  "hash": "729a289206a0a143f179",
   "publicPath": "/assets/",
   "outputPath": "/Users/amurzashev/Projects/rocket/ssr-client/public/assets",
   "assetsByChunkName": {
-    "Home": ["0.f2ec7a03.js", "0.f2ec7a03.js.map"],
-    "Image": ["1.c4be1dc0.js", "1.c4be1dc0.js.map"],
-    "Search": ["2.80dcd301.js", "2.80dcd301.js.map"],
-    "main": ["main.60adeb93.js", "main.60adeb93.js.map"],
-    "vendors~Image": ["4.de398411.js", "4.de398411.js.map"],
-    "vendors~main": ["5.26dec664.css", "5.ce4e3c3d.js", "5.ce4e3c3d.js.map"]
+    "Home": [
+      "0.f2ec7a03.js",
+      "0.f2ec7a03.js.map"
+    ],
+    "Image": [
+      "1.c4be1dc0.js",
+      "1.c4be1dc0.js.map"
+    ],
+    "Search": [
+      "2.80dcd301.js",
+      "2.80dcd301.js.map"
+    ],
+    "main": [
+      "main.edf6acd8.js",
+      "main.edf6acd8.js.map"
+    ],
+    "vendors~Image": [
+      "4.de398411.js",
+      "4.de398411.js.map"
+    ],
+    "vendors~main": [
+      "5.26dec664.css",
+      "5.ce4e3c3d.js",
+      "5.ce4e3c3d.js.map"
+    ]
   },
   "assets": [
     {
       "name": "0.f2ec7a03.js",
       "size": 12556,
-      "chunks": [0],
-      "chunkNames": ["Home"],
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "Home"
+      ],
       "emitted": false
     },
     {
       "name": "0.f2ec7a03.js.map",
       "size": 46344,
-      "chunks": [0],
-      "chunkNames": ["Home"],
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "Home"
+      ],
       "emitted": false
     },
     {
       "name": "1.c4be1dc0.js",
       "size": 4030,
-      "chunks": [1],
-      "chunkNames": ["Image"],
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "Image"
+      ],
       "emitted": false
     },
     {
       "name": "1.c4be1dc0.js.map",
       "size": 7891,
-      "chunks": [1],
-      "chunkNames": ["Image"],
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "Image"
+      ],
       "emitted": false
     },
     {
       "name": "2.80dcd301.js",
       "size": 13361,
-      "chunks": [2],
-      "chunkNames": ["Search"],
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "Search"
+      ],
       "emitted": false
     },
     {
       "name": "2.80dcd301.js.map",
       "size": 45089,
-      "chunks": [2],
-      "chunkNames": ["Search"],
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "Search"
+      ],
       "emitted": false
     },
     {
       "name": "4.de398411.js",
       "size": 76360,
-      "chunks": [4],
-      "chunkNames": ["vendors~Image"],
+      "chunks": [
+        4
+      ],
+      "chunkNames": [
+        "vendors~Image"
+      ],
       "emitted": false
     },
     {
@@ -73,22 +120,34 @@
     {
       "name": "4.de398411.js.map",
       "size": 713063,
-      "chunks": [4],
-      "chunkNames": ["vendors~Image"],
+      "chunks": [
+        4
+      ],
+      "chunkNames": [
+        "vendors~Image"
+      ],
       "emitted": false
     },
     {
       "name": "5.26dec664.css",
       "size": 1934,
-      "chunks": [5],
-      "chunkNames": ["vendors~main"],
+      "chunks": [
+        5
+      ],
+      "chunkNames": [
+        "vendors~main"
+      ],
       "emitted": false
     },
     {
       "name": "5.ce4e3c3d.js",
       "size": 271591,
-      "chunks": [5],
-      "chunkNames": ["vendors~main"],
+      "chunks": [
+        5
+      ],
+      "chunkNames": [
+        "vendors~main"
+      ],
       "emitted": false
     },
     {
@@ -101,35 +160,50 @@
     {
       "name": "5.ce4e3c3d.js.map",
       "size": 993734,
-      "chunks": [5],
-      "chunkNames": ["vendors~main"],
+      "chunks": [
+        5
+      ],
+      "chunkNames": [
+        "vendors~main"
+      ],
       "emitted": false
     },
     {
-      "name": "main.60adeb93.js",
-      "size": 12555,
-      "chunks": [3],
-      "chunkNames": ["main"],
+      "name": "main.edf6acd8.js",
+      "size": 12591,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [
+        "main"
+      ],
       "emitted": false
     },
     {
-      "name": "main.60adeb93.js.map",
-      "size": 30136,
-      "chunks": [3],
-      "chunkNames": ["main"],
+      "name": "main.edf6acd8.js.map",
+      "size": 30215,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [
+        "main"
+      ],
       "emitted": false
     }
   ],
   "filteredAssets": 0,
   "entrypoints": {
     "main": {
-      "chunks": [5, 3],
+      "chunks": [
+        5,
+        3
+      ],
       "assets": [
         "5.26dec664.css",
         "5.ce4e3c3d.js",
         "5.ce4e3c3d.js.map",
-        "main.60adeb93.js",
-        "main.60adeb93.js.map"
+        "main.edf6acd8.js",
+        "main.edf6acd8.js.map"
       ],
       "children": {},
       "childAssets": {}
@@ -137,25 +211,36 @@
   },
   "namedChunkGroups": {
     "main": {
-      "chunks": [5, 3],
+      "chunks": [
+        5,
+        3
+      ],
       "assets": [
         "5.26dec664.css",
         "5.ce4e3c3d.js",
         "5.ce4e3c3d.js.map",
-        "main.60adeb93.js",
-        "main.60adeb93.js.map"
+        "main.edf6acd8.js",
+        "main.edf6acd8.js.map"
       ],
       "children": {},
       "childAssets": {}
     },
     "Home": {
-      "chunks": [0],
-      "assets": ["0.f2ec7a03.js", "0.f2ec7a03.js.map"],
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "0.f2ec7a03.js",
+        "0.f2ec7a03.js.map"
+      ],
       "children": {},
       "childAssets": {}
     },
     "Image": {
-      "chunks": [4, 1],
+      "chunks": [
+        4,
+        1
+      ],
       "assets": [
         "4.de398411.js",
         "4.de398411.js.map",
@@ -166,8 +251,13 @@
       "childAssets": {}
     },
     "Search": {
-      "chunks": [2],
-      "assets": ["2.80dcd301.js", "2.80dcd301.js.map"],
+      "chunks": [
+        2
+      ],
+      "assets": [
+        "2.80dcd301.js",
+        "2.80dcd301.js.map"
+      ],
       "children": {},
       "childAssets": {}
     }
@@ -190,16 +280,24 @@
       "filteredAssets": 0,
       "entrypoints": {
         "mini-css-extract-plugin": {
-          "chunks": [0],
-          "assets": ["*"],
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
           "children": {},
           "childAssets": {}
         }
       },
       "namedChunkGroups": {
         "mini-css-extract-plugin": {
-          "chunks": [0],
-          "assets": ["*"],
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "*"
+          ],
           "children": {},
           "childAssets": {}
         }
